@@ -5,12 +5,12 @@
 	var/list/priority_reactions = list()
 
 	//Builds a list of gas id to reaction group
-	for(var/gas_id in GLOB.meta_gas_info)
+	for(var/gas_id in GLOB.meta_gas_info[META_GAS_ID])
 		priority_reactions[gas_id] = list(
-			PRIORITY_PRE_FORMATION = list(),
-			PRIORITY_FORMATION = list(),
-			PRIORITY_POST_FORMATION = list(),
-			PRIORITY_FIRE = list()
+			/* PRIORITY_PRE_FORMATION = */ list(),
+			/* PRIORITY_FORMATION = */ list(),
+			/* PRIORITY_POST_FORMATION = */ list(),
+			/* PRIORITY_FIRE = */ list()
 		)
 
 	for(var/datum/gas_reaction/reaction as anything in subtypesof(/datum/gas_reaction))

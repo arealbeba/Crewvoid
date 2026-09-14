@@ -30,7 +30,7 @@
 	 * Or
 	 * - A single weight for all tiers.
 	 */
-	var/list/weight = 0
+	var/alist/weight = 0
 	/**
 	 * The min population for which this ruleset is available.
 	 *
@@ -40,7 +40,7 @@
 	 * Or
 	 * - A single min population for all tiers.
 	 */
-	var/list/min_pop = 0
+	var/alist/min_pop = 0
 	/// List of roles that are blacklisted from this ruleset
 	/// For roundstart rulesets, it will prevent players from being selected for this ruleset if they have one of these roles
 	/// For latejoin or midround rulesets, it will prevent players from being assigned to this ruleset if they have one of these roles
